@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import { assetsObjOne } from './AssetsData';
+import { usersObjOne } from './UsersData';
 import { CgPushChevronRight } from "react-icons/cg";
 
-const DashAssetsList = () => {
+const DashUsersList = () => {
     return (
         <div className='pl-4 md:pl-72 lg:pl-80 pt-32 pr-4 md:pr-12 '>
             <div className='bg-white rounded-lg '>
                 <div className='px-5 pb-2 pt-6 border-b border-hasobgray'>
-                    <h1 className='font-black text-xl md:text-2xl'>All Assets</h1>
+                    <h1 className='font-black text-xl md:text-2xl'>Users</h1>
                 </div>
 
                 <div className='px-5 pb-6 pt-6 flex justify-end'>
@@ -47,40 +47,52 @@ const DashAssetsList = () => {
                                         Name
                                     </th>
                                     <th className='p-2 text-left'>
-                                        Category
-                                    </th>
-                                    <th className='p-2 text-left'>
-                                        Quantity
-                                    </th>
-                                    <th className='p-2 text-left'>
                                         Location
+                                    </th>
+                                    <th className='p-2 text-left'>
+                                        Status
                                     </th>
                                     <th className='p-2 text-left'>
                                         Edit
                                     </th>
+                                    <th className='p-2 text-left'>
+                                        Delete
+                                    </th>
+                                    <th className='p-2 text-left'>
+                                        Disable
+                                    </th>
+                                    <th className='p-2 text-left'>
+                                        Change Password
+                                    </th>
                                 </tr>
                             </thead>
                             {
-                                assetsObjOne.map(item=>(
+                                usersObjOne.map(item=>(
                                     <tbody key={item.sn}>
                                         <tr  className='bg-white border border-hasobgray rounded-t-lg p-2'>
                                             <th className='p-2 border-r border-hasobgray text-left'>
                                                 {item.sn}
                                             </th>
                                             <th className='p-2 border-r border-hasobgray text-left'>
-                                                {item.assetname}
-                                            </th>
-                                            <th className='p-2 border-r border-hasobgray text-left'>
-                                                {item.category}
-                                            </th>
-                                            <th className='p-2 border-r border-hasobgray text-left'>
-                                                {item.qty}
+                                                {item.name}
                                             </th>
                                             <th className='p-2 border-r border-hasobgray text-left'>
                                                 {item.location}
                                             </th>
                                             <th className='p-2 border-r border-hasobgray text-left'>
-                                                {item.edittext}
+                                                {item.status}
+                                            </th>
+                                            <th className='p-2 border-r border-hasobgray text-left'>
+                                                {item.edit}
+                                            </th>
+                                            <th className='p-2 border-r border-hasobgray text-left'>
+                                                {item.deleteIcon}
+                                            </th>
+                                            <th className='p-2 border-r border-hasobgray text-left'>
+                                                {item.disableIcon}
+                                            </th>
+                                            <th className='p-2 border-r border-hasobgray text-left'>
+                                                {item.password}
                                             </th>
                                         </tr>
                                     </tbody>
@@ -123,4 +135,4 @@ const DashAssetsList = () => {
     )
 }
 
-export default DashAssetsList
+export default DashUsersList

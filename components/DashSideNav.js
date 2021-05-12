@@ -54,12 +54,12 @@ const DashSideNav = ({activePage}) => {
                         </div>
 
                         <div className='mb-8'>
-                            <Link href="/dashboard/user">
+                            <Link href="/dashboard/users">
                             <a className= {
-                                    activePage==="user" ? 'block w-auto rounded-r-full px-2 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
+                                    activePage==="users" ? 'block w-auto rounded-r-full px-2 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
                                     'block w-auto rounded-r-full px-2 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
                                 }>
-                                    User
+                                    Users
                                 </a>
                             </Link>
                         </div>

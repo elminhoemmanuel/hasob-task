@@ -6,7 +6,7 @@ import { FaLinkedin, FaTwitter, FaFacebookSquare } from "react-icons/fa";
 
 const DashProfile = () => {
     return (
-        <div className='pl-4 md:pl-72 lg:pl-96 pt-32 pr-4 md:pr-8 '>
+        <div className='pl-4 md:pl-72 lg:pl-80 pt-32 pr-4 md:pr-12 '>
             <div className='bg-white rounded-lg flex flex-col md:flex-row'>
 
                 <div className='bg-white w-full md:w-2/5 border border-hasobgray pb-4 rounded-l'>
