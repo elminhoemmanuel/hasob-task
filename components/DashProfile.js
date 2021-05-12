@@ -7,9 +7,9 @@ import { FaLinkedin, FaTwitter, FaFacebookSquare } from "react-icons/fa";
 const DashProfile = () => {
     return (
         <div className='pl-4 md:pl-72 lg:pl-96 pt-32 pr-4 md:pr-8 '>
-            <div className='bg-white rounded flex flex-col md:flex-row'>
+            <div className='bg-white rounded-lg flex flex-col md:flex-row'>
 
-                <div className='bg-white w-full md:w-2/5 border border-hasobgray pb-4'>
+                <div className='bg-white w-full md:w-2/5 border border-hasobgray pb-4 rounded-l'>
                     <div className='px-5 pb-2 pt-6 border-b border-hasobgray'>
                         <h1 className='font-black text-xl md:text-2xl'>User Profile</h1>
                     </div>
@@ -40,7 +40,7 @@ const DashProfile = () => {
 
                 </div>
 
-                <div className='bg-white w-full md:w-3/5 border border-hasobgray pb-4'>
+                <div className='bg-white w-full md:w-3/5 border border-hasobgray pb-4 rounded-r'>
                     <div className='px-5 pb-3 pt-6 border-b border-hasobgray flex justify-end'>
                         <div>
                             <button type='submit' className='bg-hasobred px-3 py-1 border
@@ -116,8 +116,8 @@ const DashProfile = () => {
                                 </div>
                                 <div className='w-2/3 flex flex-row items-center justify-evenly'>
                                     <FaLinkedin className="block w-6 h-full text-iconblue mr-2" />
-                                    <FaTwitter className="block w-6 h-full text-iconblue mr-2" />
-                                    <FaFacebookSquare className="block w-6 h-full text-twitterblue mr-2" />
+                                    <FaTwitter className="block w-6 h-full text-twitterblue mr-2" />
+                                    <FaFacebookSquare className="block w-6 h-full text-iconblue mr-2" />
                                     
                                 </div>
 
