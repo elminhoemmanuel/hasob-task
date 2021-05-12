@@ -90,9 +90,7 @@ const signin = () => {
                                     placeholder='Password'
                                     required
                                 />
-                                {errors.password && dirty.password && (
-                                        <p className='text-red-500 text-xs'>{errors.password}</p>
-                                    )}
+                                
 
                             </div>
 
@@ -103,7 +101,6 @@ const signin = () => {
                                         name="remember"
                                         id='remember'
                                         placeholder=''
-                                        required
                                     />
                                     <label htmlFor="remember" className='text-xs'> Remember me</label>
 
@@ -119,7 +116,7 @@ const signin = () => {
 
                             <div className='text-center mb-3'>
                                 {
-                                    errors.email || errors.password || email==="" || password==="" ?
+                                    errors.email ||  email==="" || password==="" ?
                                     <button type='submit' className='pointer-events-none opacity-30 bg-hasobred px-3 py-1 border
                                  border-black text-center text-black font-black text-sm focus:outline-none
                                  hover:bg-red-900 rounded-lg'>
