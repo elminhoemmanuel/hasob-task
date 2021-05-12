@@ -5,7 +5,7 @@ import DashSideNav from '../../components/DashSideNav'
 
 const DashIndex = () => {
     return (
-        <div className='bg-hasobgray h-screen 2xl:max-w-screen-2xl 2xl:mx-auto pb-12'>
+        <div className='bg-hasobgray h-auto 2xl:max-w-screen-2xl 2xl:mx-auto pb-12'>
             <DashNavTop activePage='profile'/>
             <DashSideNav activePage='profile'/>
             <DashProfile />

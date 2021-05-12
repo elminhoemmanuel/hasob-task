@@ -23,6 +23,8 @@ module.exports = {
         locationsbox: '#a7d1e9',
         usersbox: '#d06867',
         notifybox: '#fe0000',
+        iconblue: '#3a4db6',
+        twitterblue: '#3596cd',
         
       }
     },
