@@ -102,7 +102,7 @@ const DashNavTop = ({activePage}) => {
                     <div className='flex flex-row items-center justify-start'>
 
                         <div className='pr-3 hidden md:block'>
-                            <Link href="/dashboard/">
+                            <Link href="/dashboard/profile">
                                 <a className=''>
                                     <img className='w-10 h-10' src="/images/user-profile-pic.jpeg" alt="vendor avatar"/>
                                 </a>
