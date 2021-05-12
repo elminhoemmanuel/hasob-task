@@ -7,8 +7,8 @@ import DashAssetDetail from '../../../components/DashAssetDetail'
 const DashIndex = () => {
     return (
         <div className='bg-hasobgray h-auto 2xl:max-w-screen-2xl 2xl:mx-auto pb-12'>
-            <DashNavTop activePage='profile'/>
-            <DashSideNav activePage='profile'/>
+            <DashNavTop activePage='assets'/>
+            <DashSideNav activePage='assets'/>
             <DashAssetDetail />
 
         </div>

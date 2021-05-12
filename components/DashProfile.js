@@ -21,7 +21,6 @@ const DashProfile = () => {
                         <div className='border border-hasobgray p-3 rounded'>
                             <h1 className='font-black text-sm md:text-base mb-2'>User Profile</h1>
                             <h1 className='font-black text-sm md:text-sm mb-2'>
-                            
                                 <FiPhoneCall className="inline w-6 h-full text-gray-200 mr-2" />
                                 08122278609
                             </h1>
