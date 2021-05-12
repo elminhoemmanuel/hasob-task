@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const DashSideNav = ({activePage}) => {
     return (
-        <div className='md:flex shadow-xl flex-col hidden bg-white text-black md:w-1/3 lg:w-1/4 h-full fixed top-0 z-30 pt-8 max-w-screen-2xl transition  overflow-y-scroll'>
+        <div className='md:flex shadow-xl flex-col hidden bg-white text-black md:w-1/3 lg:w-1/4 xl:w-1/6 h-full fixed top-0 z-30 pt-8 max-w-screen-2xl transition  overflow-y-scroll'>
                 <div className='px-6 pt-24 pb-3s relative'>
                     <div className='pr-16'>
 
