@@ -15,6 +15,7 @@ module.exports = {
         divider: '#bfc7ca',
         grayish: '#6c6d6f',
         hasobred: '#ec474e',
+        dashgray: '#c5c5c5',
         
       }
     },
@@ -23,7 +24,7 @@ module.exports = {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
-      'md': '769px',
+      'md': '768px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',
