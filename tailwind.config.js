@@ -16,6 +16,13 @@ module.exports = {
         grayish: '#6c6d6f',
         hasobred: '#ec474e',
         dashgray: '#c5c5c5',
+        assetsbox: '#c73a40',
+        assignedbox: '#feae69',
+        unassignedbox: '#fc749a',
+        vendorsbox: '#e2e6e9',
+        locationsbox: '#a7d1e9',
+        usersbox: '#d06867',
+        notifybox: '#fe0000',
         
       }
     },
