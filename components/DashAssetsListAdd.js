@@ -124,7 +124,7 @@ const DashAssetsListAdd = () => {
                                 />
                                 <div className='flex items-center pointer-events-none absolute top-0 left-0 text-hasobgray h-full w-full p-3 bg-hasobgray border border-hasobgray focus:outline-none focus:border-hasobred rounded placeholder-gray-600'>
                                     <div className='mr-4'>
-                                        <FaImage className='text-black w-12 h-12'/>
+                                        <FaImage className='text-black w-20 h-16'/>
                                     </div>
                                     <div className='text-gray-600'>
                                         Upload Image
