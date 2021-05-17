@@ -4,7 +4,7 @@ import Link from 'next/link'
 const DashSideNav = ({activePage}) => {
     return (
         <div className='md:flex shadow-xl flex-col hidden bg-white text-black md:w-1/3 lg:w-1/4 xl:w-1/6 h-full fixed top-0 z-30 pt-8 max-w-screen-2xl transition  overflow-y-scroll'>
-                <div className='px-6 pt-24 pb-3s relative'>
+                <div className='px-4 pt-24 pb-3s relative'>
                     <div className='pr-16'>
 
                         <div className='relative mb-8'>
@@ -23,8 +23,8 @@ const DashSideNav = ({activePage}) => {
                             <Link href="/dashboard/profile">
                             
                                 <a className= {
-                                    activePage==="profile" ? 'block w-auto rounded-r-full px-2 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
-                                    'block w-auto rounded-r-full px-2 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
+                                    activePage==="profile" ? 'block w-auto rounded-r-full pl-2 pr-3 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
+                                    'block w-auto rounded-r-full pl-2 pr-3 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
                                 }>
                                     Profile
                                 </a>
@@ -34,8 +34,8 @@ const DashSideNav = ({activePage}) => {
                         <div className='mb-8'>
                             <Link href="/dashboard/">
                             <a className= {
-                                    activePage==="dashboard" ? 'block w-auto rounded-r-full px-2 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
-                                    'block w-auto rounded-r-full px-2 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
+                                    activePage==="dashboard" ? 'block w-auto rounded-r-full pl-2 pr-3 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
+                                    'block w-auto rounded-r-full pl-2 pr-3 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
                                 }>
                                     Dashboard
                                 </a>
@@ -45,8 +45,8 @@ const DashSideNav = ({activePage}) => {
                         <div className='mb-8'>
                             <Link href="/dashboard/assets">
                             <a className= {
-                                    activePage==="assets" ? 'block w-auto rounded-r-full px-2 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
-                                    'block w-auto rounded-r-full px-2 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
+                                    activePage==="assets" ? 'block w-auto rounded-r-full pl-2 pr-3 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
+                                    'block w-auto rounded-r-full pl-2 pr-3 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
                                 }>
                                     Assets
                                 </a>
@@ -56,8 +56,8 @@ const DashSideNav = ({activePage}) => {
                         <div className='mb-8'>
                             <Link href="/dashboard/users">
                             <a className= {
-                                    activePage==="users" ? 'block w-auto rounded-r-full px-2 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
-                                    'block w-auto rounded-r-full px-2 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
+                                    activePage==="users" ? 'block w-auto rounded-r-full pl-2 pr-3 py-3 bg-hasobred font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105' :
+                                    'block w-auto rounded-r-full pl-2 pr-3 py-3 bg-hasobgray font-black text-center border-b-2 border-r-2 border-l-2 border-dashgray transform hover:scale-105'
                                 }>
                                     Users
                                 </a>

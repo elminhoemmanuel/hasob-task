@@ -2,16 +2,111 @@ import React from 'react'
 import Link from 'next/link'
 import { usersObjOne } from './UsersData';
 import { CgPushChevronRight } from "react-icons/cg";
-import { useRouter } from 'next/router'
-import Router from 'next/dist/next-server/server/router';
 
 
-const DashUsersList = () => {
-
-    const router = useRouter();
-
+const DashUsersListAdd = () => {
     return (
         <div className='pl-4 md:pl-72 lg:pl-80 pt-32 pr-4 md:pr-12 '>
+
+            {/* modal to add user */}
+
+            <div className='absolute top-52  w-3/5 md:w-1/2 lg:w-3/5 h-auto  rounded bg-white shadow-xl
+            px-5 py-2 z-50 add-modal border border-hasobgray mb-5'>
+                <div className='pb-2 pt-6 border-b border-hasobgray text-center'>
+                    <h1 className='font-black text-xl md:text-2xl'>Add User</h1>
+                </div>
+
+                <div className='border-t border-hasobgray py-3'>
+                    <form action="">
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-3 mb-4'>
+                            <div>
+                                <input type="text" 
+                                className='w-full p-3 bg-hasobgray border border-hasobgray focus:border-hasobred rounded placeholder-gray-600'
+                                name='firstname'
+                                id='firstname'
+                                placeholder='First Name'
+                                />
+                            </div>
+                            <div>
+                                <input type="text" 
+                                className='w-full p-3 bg-hasobgray border border-hasobgray focus:border-hasobred rounded placeholder-gray-600'
+                                name='middlename'
+                                id='middlename'
+                                placeholder='Middle Name'
+                                />
+                            </div>
+
+                        </div>
+
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-3 mb-4'>
+                            <div>
+                                <input type="text" 
+                                className='w-full p-3 bg-hasobgray border border-hasobgray focus:border-hasobred rounded placeholder-gray-600'
+                                name='lastname'
+                                id='lastname'
+                                placeholder='Last Name'
+                                />
+                            </div>
+                            <div>
+                                <input type="number" 
+                                className='w-full p-3 bg-hasobgray border border-hasobgray focus:border-hasobred rounded placeholder-gray-600'
+                                name='phone'
+                                id='phone'
+                                placeholder='Phone #'
+                                />
+                            </div>
+
+                        </div>
+
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-3 mb-4'>
+                            <div>
+                                <input type="email" 
+                                className='w-full p-3 bg-hasobgray border border-hasobgray focus:border-hasobred rounded placeholder-gray-600'
+                                name='email'
+                                id='email'
+                                placeholder='Email'
+                                />
+                            </div>
+                            <div>
+                                <input type="password" 
+                                className='w-full p-3 bg-hasobgray border border-hasobgray focus:border-hasobred rounded placeholder-gray-600'
+                                name='password'
+                                id='password'
+                                placeholder='Password'
+                                />
+                            </div>
+
+                        </div>
+
+                        <div className='mb-4'>
+                                <textarea type="text" 
+                                rows='3'
+                                name='summary'
+                                id='summary'
+                                placeholder="Summary"
+                                className='w-full p-3 bg-hasobgray border border-hasobgray focus:border-hasobred rounded placeholder-gray-600'
+                                ></textarea>
+                        </div>
+
+                        <div className=' flex flex-col-reverse lg:flex-row md:items-center justify-start lg:justify-between'>
+                    
+                            <div>
+                                    <button type='button' className='whitespace-nowrap w-full text-lg text-center block p-2  text-gray-600 font-bold '> 
+                                        Cancel
+                                    </button>
+                            </div>
+                            <div>
+                                    <button type='button' className='whitespace-nowrap w-full text-lg text-center block p-2  text-hasobred font-bold '> 
+                                        Add User
+                                    </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
             <div className='bg-white rounded-lg '>
                 <div className='px-5 pb-2 pt-6 border-b border-hasobgray'>
                     <h1 className='font-black text-xl md:text-2xl'>Users</h1>
@@ -115,13 +210,9 @@ const DashUsersList = () => {
                     </div>
                     <div className='flex items-center'>
                         <div>
-                            <button type='button' className='whitespace-nowrap text-sm block px-2 py-0.5 border-r-2 border-hasobgray text-gray-600 font-bold'
-                            onClick={() =>{
-                                router.push('/dashboard/users/add')
-                            }}
-                            >
+                            <button type='button' className='whitespace-nowrap text-sm block px-2 py-0.5 border-r-2 border-hasobgray text-gray-600 font-bold'>
                                 <svg className="w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
-                                Add
+                                Adder
                             </button>
                         </div>
                         <div>
@@ -145,4 +236,4 @@ const DashUsersList = () => {
     )
 }
 
-export default DashUsersList
+export default DashUsersListAdd
